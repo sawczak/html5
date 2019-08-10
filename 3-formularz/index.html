@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h1, initial-scale=h1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Formularz</h1>
     <form>
         <input id="zgoda" type="checkbox">
         <label for="zgoda">Zgadzam się</label>
-        
+
         <br />
-        
+
         <label>
             <input type="checkbox">
             Zapisz mnie
         </label>
         <br />
-    
+
         <input type="submit" value="wyślij">
     </form>
+
+
+
+    <h1>Formularz exercise</h1>
+    <form action="https://formspree.io/izabela.ziemba@gmail.com" method="POST">
+        <label for="imie">Imię:</label><br />
+        <input type="text" name="imie" id="imie"><br />
+        <label for="nazwisko">Nazwisko:</label><br />
+        <input type="text" name="nazwisko" id="nazwisko"><br />
+        <label for="email">Email:</label><br />
+        <input type="email" name="_replyto"><br />
+        <label for="phone">Numer telefonu:</label><br />
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+        placeholder="22-666-099-098" required><br />
+        <label for="text">Wiadomość:</label><br />
+        <textarea maxlength="1000" name="message"></textarea>
+        <input type="submit" value="Wyślij">
+    </form>
+
 </body>
+
 </html>
